@@ -42,14 +42,17 @@
 
 ## Public Smoke
 
-- URL: `https://vid-headquarters-administered-rear.trycloudflare.com`
+- Stable URL: `https://daviddeodato.github.io/miradeck/`
+- Temporary tunnel URL: `https://vid-headquarters-administered-rear.trycloudflare.com`
 - HTTP `/`: 200.
 - HTTP JS bundle: 200.
+- GitHub Pages smoke: passed with `MIRADECK_BASE_URL=https://daviddeodato.github.io/miradeck/ npm run qa:smoke`.
 - Browser public landing: passed, no console warnings/errors.
-- Browser public login/workspace: passed, no console warnings/errors.
+- Browser public login/workspace: passed on tunnel; GitHub Pages full flow passed via Playwright.
 
 ## Known QA Notes
 
 - Vercel CLI deploy failed with invalid-token response despite REST auth returning 200.
 - Vercel REST deploy failed with 403 `You don't have permission to create a project.`
-- Public URL is a Cloudflare temporary tunnel and depends on the local static server/tunnel process staying alive.
+- Vercel connector `_list_projects` failed for the API-returned team ID.
+- GitHub Pages is the stable public URL for this iteration.

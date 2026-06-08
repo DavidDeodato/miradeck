@@ -3,7 +3,7 @@
 ## Current
 
 - [ ] Promote MVP to real backend/auth/AI when requested.
-- [ ] Replace Cloudflare temporary URL with Vercel/custom domain after project-create permission is fixed.
+- [ ] Replace GitHub Pages with Vercel/custom domain after project-create permission is fixed, if Vercel remains required.
 
 ## Done
 
@@ -20,6 +20,9 @@
 - [x] Added repeatable Playwright smoke automation.
 - [x] Ran build, lint, browser QA, and public smoke.
 - [x] Captured screenshots, GIF, and public URL.
+- [x] Created GitHub repo `DavidDeodato/miradeck`.
+- [x] Published stable GitHub Pages URL.
+- [x] Ran full Playwright smoke against GitHub Pages.
 
 ## Blocked
 

@@ -2,9 +2,9 @@
 
 ## Public URL
 
-- `https://vid-headquarters-administered-rear.trycloudflare.com`
-- Served from the production build in `dist` through a local Cloudflare Tunnel.
-- This is a temporary public URL; it stays live while the local static server and tunnel are running.
+- Stable URL: `https://daviddeodato.github.io/miradeck/`
+- Repository: `https://github.com/DavidDeodato/miradeck`
+- Temporary tunnel used during iteration: `https://vid-headquarters-administered-rear.trycloudflare.com`
 
 ## What Was Built
 
@@ -39,6 +39,7 @@
 - `npm run build`: passed.
 - `npm run lint`: passed.
 - `npm run qa:smoke`: passed.
+- `MIRADECK_BASE_URL=https://daviddeodato.github.io/miradeck/ npm run qa:smoke`: passed.
 
 ## Validated Flow
 
@@ -65,6 +66,7 @@ The automated smoke test covers:
 - App mobile: `C:\Users\lucas\Desktop\projetos\miradeck\evidence\app-mobile-final.png`
 - Public landing: `C:\Users\lucas\Desktop\projetos\miradeck\evidence\public-landing.png`
 - Public app: `C:\Users\lucas\Desktop\projetos\miradeck\evidence\public-app.png`
+- GitHub Pages smoke log: `C:\Users\lucas\Desktop\projetos\miradeck\evidence\github-pages-qa-smoke.log`
 - Flow GIF: `C:\Users\lucas\Desktop\projetos\miradeck\evidence\miradeck-flow.gif`
 - QA JSON: `C:\Users\lucas\Desktop\projetos\miradeck\evidence\qa-smoke-results.json`
 - Open Design reference: `C:\Users\lucas\Desktop\projetos\miradeck\evidence\open-design-reference.html`
@@ -72,9 +74,16 @@ The automated smoke test covers:
 ## Vercel Status
 
 - Vercel REST auth check returned 200.
+- Vercel connector project listing failed for the API-returned team ID.
 - Vercel CLI deploy failed because the CLI rejected the token.
 - Vercel REST static deploy failed with 403: project creation is not allowed for this token/account role.
-- Fallback used: Cloudflare Tunnel public URL.
+- Stable fallback used: GitHub Pages.
+
+## Integration Status
+
+- Vercel: used connector + CLI + REST; blocked on project permissions.
+- GitHub: used connector to inspect access; used authenticated GitHub CLI to create `DavidDeodato/miradeck`, push source, publish `gh-pages`, and verify Pages.
+- Stripe: used connector read-only to confirm account; no live product/price/payment mutation because payment is not in this MVP.
 
 ## Next Production Step
 
@@ -85,4 +94,4 @@ Promote this MVP into a real SaaS by adding:
 - server-side OpenAI routes;
 - Cloudinary signed uploads;
 - Stripe billing only if this product needs paid plans;
-- permanent Vercel project/domain after project-create permission is fixed.
+- permanent Vercel project/domain after project-create permission is fixed, if server-side runtime is promoted.

@@ -17,3 +17,7 @@
 | 2026-06-07 | Vercel CLI attempt | `C:\Users\lucas\Desktop\projetos\miradeck\evidence\vercel-deploy.log` | Failed: CLI rejected token |
 | 2026-06-07 | Vercel REST attempt | `C:\Users\lucas\Desktop\projetos\miradeck\evidence\vercel-rest-deploy.json` | Failed: 403 project-create permission |
 | 2026-06-07 | Public Cloudflare URL | `https://vid-headquarters-administered-rear.trycloudflare.com` | Live via local tunnel |
+| 2026-06-07 | GitHub repo | `https://github.com/DavidDeodato/miradeck` | Created and source pushed |
+| 2026-06-07 | GitHub Pages URL | `https://daviddeodato.github.io/miradeck/` | Built, HTTPS enforced, source `gh-pages` |
+| 2026-06-07 | GitHub Pages smoke | `C:\Users\lucas\Desktop\projetos\miradeck\evidence\github-pages-qa-smoke.log` | Passed |
+| 2026-06-07 | GitHub Pages screenshots | `C:\Users\lucas\Desktop\projetos\miradeck\evidence\flow-01-landing.png` to `flow-06-mobile-workspace.png` | Recaptured against Pages |

@@ -33,7 +33,7 @@ All are persisted in one `miradeck.state.v1` localStorage record.
 - Media: Cloudinary upload signatures through backend route.
 - AI: server endpoint calling OpenAI; never browser-side secrets.
 - Payments: Stripe Checkout/Billing only when product scope requires it.
-- Deploy: Vercel static/serverless after project-create permission is fixed; Cloudflare Tunnel is the current public MVP fallback.
+- Deploy: GitHub Pages for the current stable static MVP; Vercel static/serverless after project-create permission is fixed.
 
 ## Design System
 
@@ -63,3 +63,4 @@ Core tokens:
 - Browser desktop/mobile screenshots.
 - Console warnings/errors on local and public URL.
 - Evidence: screenshots, GIF, and structured `qa-smoke-results.json`.
+- Stable public smoke: `MIRADECK_BASE_URL=https://daviddeodato.github.io/miradeck/ npm run qa:smoke`.

@@ -49,8 +49,9 @@ Build a polished AI assistant platform with an original brand, public landing pa
 | AI key | Available | Not exposed in frontend; future backend/API only. |
 | Database | Available by env | Future migration target. |
 | Cloudinary | Available | Future file/media upload target. |
-| Vercel | API auth works, deploy blocked | CLI rejected token; REST API returned 403 for project creation. |
-| Stripe | Available read-only tested | Not in this MVP scope. |
+| Vercel | API auth works, deploy blocked | Connector/list projects failed; CLI rejected token; REST API returned 403 for project creation. |
+| GitHub | Available and used | Source pushed to `DavidDeodato/miradeck`; Pages serves stable MVP URL. |
+| Stripe | Available read-only tested | Account read via connector; no payment mutation in this MVP scope. |
 
 ## Stop Gates
 
@@ -74,4 +75,5 @@ Build a polished AI assistant platform with an original brand, public landing pa
 - Repo: `C:\Users\lucas\Desktop\projetos\miradeck`
 - Evidence: `C:\Users\lucas\Desktop\projetos\miradeck\evidence`
 - Open Design daemon: `http://127.0.0.1:52073`
-- Public URL: `https://vid-headquarters-administered-rear.trycloudflare.com`
+- Public URL: `https://daviddeodato.github.io/miradeck/`
+- Repository: `https://github.com/DavidDeodato/miradeck`
